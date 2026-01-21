@@ -7,8 +7,18 @@ int main(){
 
     int n=10;
     int key;
-    int arr[] = { 19,5,20,55,87,90,32,1,2,33};
     bool found = false;
+
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    int arr[n];
+
+    // Get elements from user
+    cout << "Enter the array list " << n << " elements:\n";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
 
     cout<<"Enter number to search : "<<endl;
     cin>>key;
