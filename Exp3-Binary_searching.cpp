@@ -5,9 +5,19 @@ int main(){
 
     int n=10;
     int key;
-    int arr[]={ 10,45,67,73,21,49,5,19,8,44};
     bool found = false;
 
+
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    int arr[n];
+
+    // Get elements from user
+    cout << "Enter the array list " << n << " elements:\n";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
 
     //sort the list 
 
@@ -30,7 +40,7 @@ int main(){
 
     cout<<"Enter number to binary search : "<<endl;
     cin>>key;
-    
+
     while(low <= high){
         int mid = (low + high )/2 ;
         if(arr[mid] == key){
